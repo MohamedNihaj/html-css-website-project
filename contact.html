@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Send a reservation enquiry to NHJ Ember, a fictional Sri Lankan charcoal grill restaurant concept in Colombo 03.">
+  <meta name="theme-color" content="#1F1B18">
+  <title>Contact &amp; Reservations | NHJ Ember</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="announcement">
+    Charcoal flame · Family recipes since 2014 · Colombo 03
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="NHJ Ember home">
+        <span class="brand-mark">E</span>
+        <span>
+          <span class="brand-name">NHJ <span>Ember</span></span>
+          <span class="brand-tag">Sri Lankan grill house</span>
+        </span>
+      </a>
+      <input class="menu-checkbox" type="checkbox" id="menu-toggle">
+      <label class="menu-toggle" for="menu-toggle">☰ Menu</label>
+      <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="faq.html">FAQ</a>
+        <a class="nav-cta" href="contact.html" aria-current="page">Book a Table ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a><span>/</span>Contact &amp; Reservations
+        </div>
+        <div class="eyebrow light" style="margin-top:1.4rem">Your table is a message away</div>
+        <h1>Let's make<br>a night of it.</h1>
+        <p>Tell us when you're thinking of coming by, how many are joining, and anything that will make your meal special.</p>
+      </div>
+    </section>
+
+    <!-- Contact & Form Section -->
+    <section class="section">
+      <div class="container contact-grid">
+        <!-- Sidebar Info -->
+        <aside>
+          <div class="contact-card">
+            <div class="eyebrow light">Visit the grill house</div>
+            <h2>Find your way<br>to the table.</h2>
+            <div class="contact-detail">
+              <span>Location</span>
+              <p>Galle Road, Colombo 03<br>Sri Lanka</p>
+            </div>
+            <div class="contact-detail">
+              <span>Opening hours</span>
+              <p>Daily · 12 noon – 10 pm<br><small style="color:#bdb0a1">Sample hours for student project</small></p>
+            </div>
+            <div class="contact-detail">
+              <span>Telephone</span>
+              <a href="tel:+94765292004">+94 76 529 2004</a>
+            </div>
+            <div class="contact-detail">
+              <span>Email</span>
+              <a href="mailto:hello@nhjember.gmail.com">hello@nhjember.gmail.com</a>
+            </div>
+          </div>
+
+          <figure class="map-figure">
+            <img src="images/contact/Map illutaor.jpg" alt="Illustrated street map showing NHJ Ember marked on Galle Road, Colombo 03, with the sea to the west" width="680" height="420" loading="lazy">
+            <figcaption>Illustrated map · Galle Road, Colombo 03</figcaption>
+          </figure>
+
+          <details class="live-map">
+            <summary>Show live map (needs internet)</summary>
+            <iframe title="Live OpenStreetMap view of Galle Road, Colombo 03" src="https://www.openstreetmap.org/export/embed.html?bbox=79.845%2C6.907%2C79.862%2C6.921&amp;layer=mapnik&amp;marker=6.9147%2C79.8530" width="600" height="320" loading="lazy" referrerpolicy="no-referrer"></iframe>
+            <a href="https://www.openstreetmap.org/?mlat=6.9147&amp;mlon=79.8530#map=16/6.9147/79.8530" target="_blank" rel="noopener">Open larger map ↗</a>
+          </details>
+          <p class="muted" style="font-size:.78rem">
+            Map shows the general Galle Road, Colombo 03 area only. The restaurant is fictional, so the pin is approximate and not a verified address.
+          </p>
+        </aside>
+
+        <!-- Reservation Form -->
+        <section class="form-panel" aria-labelledby="form-title">
+          <div class="eyebrow">Reservation enquiry</div>
+          <h2 id="form-title">Save a seat?</h2>
+          <p class="form-intro">
+            Fill in the details below to prepare a reservation enquiry. This HTML-only demonstration does not store bookings; connect a real email address or backend to receive submissions.
+          </p>
+
+          <form class="booking-form" action="mailto:hello@nhjember.example" method="post" enctype="text/plain">
+            <div class="field">
+              <label for="name">Your name *</label>
+              <input id="name" name="name" autocomplete="name" required maxlength="100" placeholder="e.g. Nihaj">
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone number *</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required maxlength="30" placeholder="+94 7X XXX XXXX">
+            </div>
+
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="email" maxlength="120" placeholder="you@example.com">
+            </div>
+
+            <div class="field">
+              <label for="guests">Number of guests *</label>
+              <select id="guests" name="guests" required>
+                <option value="">Choose guests</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9+</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="booking-date">Preferred date *</label>
+              <input id="booking-date" name="date" type="date" required>
+            </div>
+
+            <div class="field">
+              <label for="time">Preferred time *</label>
+              <select id="time" name="time" required>
+                <option value="">Choose a time</option>
+                <option>12:00 pm</option>
+                <option>12:30 pm</option>
+                <option>1:00 pm</option>
+                <option>1:30 pm</option>
+                <option>2:00 pm</option>
+                <option>5:00 pm</option>
+                <option>5:30 pm</option>
+                <option>6:00 pm</option>
+                <option>6:30 pm</option>
+                <option>7:00 pm</option>
+                <option>7:30 pm</option>
+                <option>8:00 pm</option>
+                <option>8:30 pm</option>
+                <option>9:00 pm</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="requests">Special requests</label>
+              <textarea id="requests" name="requests" maxlength="1000" placeholder="Dietary needs, spice level, high chair, celebration... (optional)"></textarea>
+            </div>
+
+            <div class="submit-row">
+              <button type="submit" class="btn btn-primary">Prepare email enquiry ↗</button>
+              <small>* Required fields</small>
+            </div>
+
+            <p class="form-footnote">
+              HTML-only form demo. Replace hello@nhjember.example with a real email address; mailto submission depends on the visitor having an email app configured. For reliable bookings, connect a backend.
+            </p>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="index.html">
+            <span class="brand-mark">E</span>
+            <span>
+              <span class="brand-name">NHJ <span>Ember</span></span>
+              <span class="brand-tag">Sri Lankan grill house</span>
+            </span>
+          </a>
+          <p>Island flavours and family recipes, brought to life over charcoal on Galle Road.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <a href="about.html">Our Story</a>
+          <a href="menu.html">Food &amp; Drinks</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="faq.html">Guest FAQ</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Find Us</h3>
+          <p>Galle Road, Colombo 03<br>Sri Lanka</p>
+          <p>Daily · 12 noon – 10 pm</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Come Hungry</h3>
+          <a href="contact.html">Reservation enquiry</a>
+          <p>Phone: +94 76 529 2004</p>
+          <p>Email: hello@nhjember.gmail.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-current-year>2026</span> NHJ Ember · Student design project</span>
+        <span>Made with island warmth · <a href="contact.html">Plan a visit ↗</a></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
